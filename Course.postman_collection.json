@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "49b60e70-1434-4df8-aaf1-0e93121be04d",
+		"name": "Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "regSurname",
+							"value": "Бабушкин",
+							"type": "text"
+						},
+						{
+							"key": "regName",
+							"value": "Павел",
+							"type": "text"
+						},
+						{
+							"key": "regPatronymic",
+							"value": "Андреевич",
+							"type": "text"
+						},
+						{
+							"key": "regTel",
+							"value": "79502703301",
+							"type": "text"
+						},
+						{
+							"key": "regEmail",
+							"value": "paulbash@mail.ru",
+							"type": "text"
+						},
+						{
+							"key": "regPass",
+							"value": "159753159753z",
+							"type": "text"
+						},
+						{
+							"key": "regRepass",
+							"value": "159753159753z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/register",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "authEmail",
+							"value": "paulbash@mail.ru",
+							"type": "text"
+						},
+						{
+							"key": "authPass",
+							"value": "159753159753z",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/auth",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/user",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserSales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/user/sales",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"user",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDataSalesSalesman",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/salesman/sales",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"salesman",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStaff",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/staff",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPrices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/prices",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllSales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/sales",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://cuorsie/api/category",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesForCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/category/prices",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"category",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "categoryID",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "priceID",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "salesmanID",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "userID",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "fggfgfgfg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/sale/add",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"sale",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "categoryID",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "priceID",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "Была произведена замена чипсета видеокарты",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://cuorsie/api/sale/update",
+					"protocol": "http",
+					"host": [
+						"cuorsie"
+					],
+					"path": [
+						"api",
+						"sale",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
